@@ -122,8 +122,10 @@ app.on('ready', async () => {
   });
 
   ipcMain.on('set-instance', (event, { instance, blur }) => {
-    selectorWindow.setTitle(`A Memory Reborn - ${instance.name}`);
     if (blur) selectorWindow.blur();
+    if (instance !== null) {
+      selectorWindow.setTitle(`A Memory Reborn - ${instance.name}`);
+    }
 
     state.instance = instance;
     state.encounter = 0;
