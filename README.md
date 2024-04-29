@@ -29,5 +29,8 @@ While in-game, press `Ctrl-Alt-S` to bring AMR to focus and you can immediately 
 
 ## FAQ
 
-### Is this in violation of Square Enix' ban on FFXIV add-ons
+### Is this in violation of Square Enix' ban on FFXIV add-ons?
 I don't _think_ so, this application is completely separate from the game, it doesn't interact with it in any form. It's basically just a more specialized way of having the wiki open on another monitor. However unlikely it is that this falls under said ban, use at your own risk.
+
+### Hey dungeon 'Insert-Dungeon-Name-Here' is missing, when will you add it?
+I dunno, I'll try to add more as I go on but feel free to add it yourself, the format should mostly speak for itself and there is a schema for this format to ensure you don't make mistakes. PRs are welcome.
