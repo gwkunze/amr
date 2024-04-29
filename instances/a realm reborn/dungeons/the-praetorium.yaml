@@ -1,0 +1,16 @@
+name: The Praetorium
+encounters:
+  - name: Mark II Magitek Colossus
+  - name: Nero tol Scaeva
+    steps:
+      - tankBuster: true
+      - stack: true
+      - knockback: true
+      - text: Once a Magitek Death Claw appears, kill it before it reaches tethered player
+  - name: Gaius van Baelsar
+    steps:
+      - tankBuster: true
+      - stack: true
+      - text: During the fight make sure you can see the west edge of the platform as multiple clones of the boss appear there occasionally firing off eastward line AoEs with a very short orange floor indicator
+      - text: Move out of the way of the white-blue cross-shaped slashes with very short orange floor indicator
+      - text: Once four clones appear, kill them asap before the boss' energy bar fills

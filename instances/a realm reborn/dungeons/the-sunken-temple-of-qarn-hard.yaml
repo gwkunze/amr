@@ -1,0 +1,23 @@
+name: The Sunken Temple of Qarn (Hard)
+encounters:
+  - name: Damaged Adjudicator
+    steps:
+      - text: Attack the body part with the (red) core
+      - text: Kill all adds once body part is destroyed
+      - text: When targeted by boss, move to the edge of the arena
+  - name: Sabotender Emperatriz
+    steps:
+      - text: Interrupt the boss when it casts 100,000 needles by dealing damage
+      - text: Kill Sabotender Guardia once it spawns
+  - name: Vicegerent to the Warden
+    steps:
+      - text: Avoid getting hit by the mummies
+      - text: When targeted by boss, run behind him
+        limits:
+          - role: tank
+            invert: true
+      - text: When boss tethers a player, stun him
+        limits:
+          - roles:
+              - tank
+              - melee-dps

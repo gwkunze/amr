@@ -1,0 +1,7 @@
+name: The Thousand Maws of Tot-Rak
+encounters:
+  - name: Coeurl O' Nine Tails
+  - name: Graffias
+    steps:
+      - text: Kill adds
+      - text: Once targetable, kill boss' tail to give the boss a vulnerability debuff

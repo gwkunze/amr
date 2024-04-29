@@ -1,0 +1,27 @@
+name: The Wanderer's Palace (Hard)
+encounters:
+  - name: Frumious Koheel Ja
+    steps:
+      - text: Kill the spears ASAP
+  - name: Slithy Zolool Ja
+    steps:
+      - text: Totem effects are random per instance but consistent, walk into them and remember the effects of each color (SCIENCE IT!)
+      - text: DPS should take the Damage Up totems
+      - text: If the boss turns you into a frog, walk into frog totem to turn back
+  - name: Manxome Molaa Ja Ja
+    steps:
+      - text: Kite the boss away from the banners that buff him
+        limits:
+          - role: tank
+      - text: Stay close to boss
+        limits:
+          - roles:
+              - healer
+              - physical-ranged-dps
+              - magical-ranged-dps
+      - text: Move out of rotting gas
+      - text: Player with Rotting Lung should stay away from party
+      - text: Remove the ${Debuffs:Doom}Doom debuff by fully healing the affected player
+        limits:
+          - role: healer
+      - text: Kill Sacred Idol add ASAP

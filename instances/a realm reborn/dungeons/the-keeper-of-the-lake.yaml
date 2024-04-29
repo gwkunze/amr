@@ -1,0 +1,22 @@
+name: The Keeper of the Lake
+encounters:
+  - name: Einhander
+    steps:
+      - tankBuster: true
+      - proximity: true
+      - text: Glowing tanks will explode after a small amount of time
+      - text: Boss' line AoE will trigger two tanks to start glowing
+      - text: The proximity AoE will trigger all tanks
+  - name: Magitek Gunship
+    steps:
+      - text: Kill adds
+      - text: Stay our of puddles
+  - name: Midgardsormr
+    steps:
+      - tankBuster: true
+      - text: When boss summons two dragons, they will do two Line AoEs covering two thirds of the arena, go where they aren't looking
+      - text: When multi-stack marker appears (multiple downward arrow on one character) bunch up and STAY bunched up until the attack finishes
+        limits:
+          - mechanic: multiStack
+      - text: Once dragon adds become targetable, quickly kill them
+      - text: Once floor becomes burning, move to middle or outer ring and move into the ring next to you when it explodes

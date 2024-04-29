@@ -1,0 +1,38 @@
+name: Haukke Manor
+encounters:
+  - name: Manor Claviger
+    steps:
+      - text: Face boss away from party
+        limits:
+          - role: tank
+      - text: Many attacks are stunnable / interruptable but not necessary
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+              - physical-ranged-dps
+      - text: Be sure to pick up the green key after killing the boss
+  - name: Manor Jester and Manor Steward
+    steps:
+      - text: Kill Jester first
+      - text: Be sure to pick up parchment after killing both bosses
+  - name: Lady Amandine
+    steps:
+      - text: Interrupt when possible
+        limits:
+          - roles:
+              - tank
+              - physical-ranged-dps
+      - text: ${Actions:Esuna}Esuna any player afflicted by ${Debuffs:Poison}Poison
+        limits:
+          - role: healer
+      - text: When the Manor Sentry casts a room-wide AoE with an Eye-icon on the sentry itself, face your character away from the sentry to avoid the attack.
+        limits:
+          - mechanic: lookAway
+      - text: After Seduce's effect ends, face your character away from the sentry to avoid the attack
+        limits:
+          - mechanic: lookAway
+      - text: Focus adds ASAP
+      - text: Interrupt the Tank Buster
+        limits:
+          - mechanic: tankBuster

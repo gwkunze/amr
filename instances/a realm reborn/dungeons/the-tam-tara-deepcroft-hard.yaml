@@ -1,0 +1,28 @@
+name: The Tam-Tara Deepcroft (Hard)
+encounters:
+  - name: Liavinne
+    steps:
+      - text: Just tank the boss, ignore zombies
+        limits:
+          - role: tank
+      - text: Do not attack the zombies, kite them around
+        limits:
+          - role: tank
+            invert: true
+      - text: Player with a marker over their head needs to run into zombie horde to make boss kill the zombies
+        limits:
+          - role: tank
+            invert: true
+      - text: Attack boss when not dealing with zombie horde
+        limits:
+          - role: tank
+            invert: true
+  - name: Spare Body
+    steps:
+      - text: Tank boss away from orbs as their explosions buffs it
+        limits:
+          - role: tank
+      - text: Prevent orbs from reaching the center by walking into them
+  - name: Avere Bravearm
+    steps:
+      - text: Kill Groom-to-be adds before they reach the center of the room

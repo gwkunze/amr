@@ -1,0 +1,6 @@
+name: The Tam-Tara Deepcroft
+encounters:
+  - name: Void Soulcounter
+  - name: Galvanth the Dominator
+    steps:
+      - text: Kill tethered adds ASAP to remove the boss' invulnerability

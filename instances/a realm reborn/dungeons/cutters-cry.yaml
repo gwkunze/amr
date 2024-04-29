@@ -1,0 +1,30 @@
+name: Cutter's Cry
+encounters:
+  - name: Myrmidon Princess
+    steps:
+      - text: Kill adds ASAP
+  - name: Trash Skip
+    steps:
+      - text: You can skip all trash mobs between the Myrmadon Princess and the Giant Tunnel Worm
+      - text: Just run past the mobs and interact with the shifting sands (twice)
+  - name: Giant Tunnel Worm
+    steps:
+      - text: When the worm is submerged stay on the edges of the arena and avoid spraying sand
+      - text: ${Actions:Esuna}Esuna any player afflicted with ${Debuffs:Sludge}Sludge
+        limits:
+          - role: healer
+  - name: Chimera
+    steps:
+      - text: Stand behind the boss to avoid the conal AoEs
+        limits:
+          - role: tank
+            invert: true
+      - text: ${Actions:Esuna}Esuna any player afflicted with ${Debuffs:Paralysis}Paralysis but prioritize healing
+        limits:
+          - role: healer
+      - text: "Eyes grow Violet: Move close to boss"
+      - text: "Eyes glow Blue: Move away from boss"
+      - text: Run away from orb before it explodes
+        limits:
+          - role: tank
+            invert: true

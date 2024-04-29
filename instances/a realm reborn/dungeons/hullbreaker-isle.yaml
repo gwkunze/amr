@@ -1,0 +1,22 @@
+name: Hullbreaker Isle
+encounters:
+  - name: Sasquatch
+    steps:
+      - text: Kill adds ASAP
+      - text: When boss enrages, activate one banana tree to calm him down
+      - text: Don't let adds eat bananas
+  - name: Sjoorm
+    steps:
+      - text: Avoid bubbles
+      - text: When boss submerges and casts a room wide AoE run into bubbles (but not too fast)
+  - name: Kraken
+    steps:
+      - text: Travel across islands by using the water sprouts
+      - text: If you get a green icon over your head, move away from party to another island and drop the tornado
+      - text: Stand at melee range of tentacles as much as possible
+        limits:
+          - roles:
+              - physical-ranged-dps
+              - magical-ranged-dps
+              - healer
+      - text: Kill all 10 tentacles

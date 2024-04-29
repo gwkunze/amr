@@ -1,0 +1,23 @@
+name: Amdapor Keep (Hard)
+encounters:
+  - name: Anchag
+    steps:
+      - text: Red marker means hide behind one of the four statues
+      - text: Don't bait boss attacks near statues or he'll destroy them
+  - name: Boogyman
+    steps:
+      - text: When boss goes invisible, kill Luminescence and stand in puddle to gain Irradiance
+      - text: Hug invisible boss with Irradiance to make him visible again
+      - text: Stay close to boss to make it easier to dodge cone attacks
+        limits:
+          - roles:
+              - physical-ranged-dps
+              - magical-ranged-dps
+              - healer
+  - name: Ferdiad
+    steps:
+      - text: Tank at the edge of arena
+        limits:
+          - role: tank
+      - text: Prioritize tethered adds to prevent AoE circle from growing
+      - text: Free trapped players by attacking Suppuration add

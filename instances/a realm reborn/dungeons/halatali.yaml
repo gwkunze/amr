@@ -1,0 +1,13 @@
+name: Halatali
+encounters:
+  - name: Firemane
+    steps:
+      - text: Ignore the adds
+  - name: Thunderclap Guivre
+    steps:
+      - text: Once the boss becomes invulnerable, kill the adds to make him vulnerable again (twice)
+      - text: Stay out of the pool
+  - name: Tangata
+    steps:
+      - text: When the boss becomes invulnerable, kill Fire Sprites near the entrance to make him vulnerable again
+      - text: Ignore the wisps

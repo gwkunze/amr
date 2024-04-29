@@ -1,0 +1,29 @@
+name: The Wanderer's Palace
+encounters:
+  - name: Keeper of Halidom
+    steps:
+      - text: Face the boss away from the rest of the party
+        limits:
+          - role: tank
+      - text: Avoid standing in front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: ${Actions:Esuna}Esuna players afflicted by the ${Debuffs:Reduced Immunity}Reduced Immunity debuff
+        limits:
+          - role: healer
+      - text: Stay spread out
+      - text: Move out of melee range after boss casts Inhale
+  - name: Giant Bavarois
+    steps:
+      - text: Move behind boss when it's casting ${Actions:Fire}Fire
+      - text: ${Actions:Esuna}Esuna players afflicted by the ${Debuffs:Paralysis}Paralysis and ${Debuffs:Heavy}Heavy debuffs
+      - text: Run away when targeted by Amorphic Flail
+      - text: Prioritize Blue, Purple and White Bavarois adds
+  - name: Tonberry King
+    steps:
+      - text: Tank boss in the middle of the arena
+        limits:
+          - role: tank
+      - text: Don't kill adds unless necessary for survival
+      - text: Stay away from Tonberry Slashers

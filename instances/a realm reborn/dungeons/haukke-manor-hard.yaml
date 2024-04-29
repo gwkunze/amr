@@ -1,0 +1,19 @@
+name: Haukke Manor (Hard)
+encounters:
+  - name: Manor Jester
+    steps:
+      - text: ${Actions:Esuna}Esuna whenever a party member is afflicted with ${Debuffs:Slow}Slow
+        limits:
+          - role: healer
+      - text: Kill adds ASAP
+  - name: Ash
+    steps:
+      - text: ${Actions:Esuna}Esuna whenever a party member is afflicted with ${Debuffs:Paralysis}Paralysis
+        limits:
+          - role: healer
+      - text: Kill add ASAP
+  - name: Halicarnassus
+    steps:
+      - text: Kill adds ASAP
+      - text: Focus one of the two Handmaidens first
+      - text: Don't damage boss too much (past ~35% health) before Lady Amandine (add) is dealt with

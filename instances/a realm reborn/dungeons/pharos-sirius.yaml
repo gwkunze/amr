@@ -1,0 +1,44 @@
+name: Pharos Sirius
+encounters:
+  - name: Symond the Unsinkable
+    steps:
+      - text: Keep party spread out
+      - text: Kill hound adds ASAP
+      - text: If you have 3 stacks of Corrupting Crystal you'll explode, stay way from others
+      - text: It's safe to walk into large circle AoEs if you have 3 stacks as all they do is add more stacks
+  - name: Zu
+    steps:
+      - text: Face boss away from group
+        limits:
+          - role: tank
+      - text: Don't attack any eggs
+      - text: Once eggs start glowing, kill ONE of them, preferably a Spotted Egg
+      - text: Avoid using ${Actions:Standard Finish}Standard Finish as it can kill eggs
+        limits:
+          - jobs:
+              - Dancer
+      - text: When boss flies into the air, kill adds
+  - name: Tyrant
+    steps:
+      - text: Face boss away from group
+        limits:
+          - role: tank
+      - text: Pick up adds
+        limits:
+          - role: tank
+  - name: Siren
+    steps:
+      - text: Tank boss in the middle
+        limits:
+          - role: tank
+      - text: Kite Zombie Storm Sergeants if they target you
+      - text: ${Actions:Esuna}Esuna any player afflicted with ${Debuffs:Bleed}Bleed
+        limits:
+          - role: healer
+      - text: Once someone is affected by ${Debuffs:Siren Song}Siren Song, they need to heal/be healed to full to get rid of it
+      - text: Once she disappears move to center, if she appears in center, stay there. If she appears at the edge, avoid her charge
+      - text: Interrupt Lunatic Voice
+        limits:
+          - roles:
+              - physical-ranged-dps
+              - tank

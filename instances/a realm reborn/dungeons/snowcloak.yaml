@@ -1,0 +1,15 @@
+name: Snowcloak
+encounters:
+  - name: Wandil
+    steps:
+      - text: Kill Frost Bomb adds
+      - text: 4 stacks of ${Debuffs:Frozen}Frozen freezes you for a short time, be sure to stay topped up
+  - name: Yeti
+    steps:
+      - text: Avoid snowball AoE (bigger snowballs = bigger AoE)
+      - text: Move in after point-blank AoE
+  - name: Fenrir
+    steps:
+      - text: When boss casts Heavensward Roar, move away from front
+      - tankBuster: true
+      - text: When boss casts Lunar Cry, hide behind blue icicles, icicle will explode so not too close

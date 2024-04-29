@@ -1,0 +1,17 @@
+name: Copperbell Mines
+encounters:
+  - name: Kottos
+    steps:
+      - tankBuster: true
+  - name: Ichorous Ire
+    steps:
+      - tankBuster: true
+  - name: Gyges the Great
+    steps:
+      - tankBuster: true
+      - text: Don't move too far away from the boss to have time to avoid donut AoE
+        limits:
+          - roles:
+              - physical-ranged-dps
+              - magical-ranged-dps
+              - healer

@@ -1,0 +1,20 @@
+name: Sastasha
+alternateNames:
+  - Sastasha Seagrot
+encounters:
+  - name: Chopper
+    steps:
+      - text: ${Actions:Esuna}Esuna party members when ${Debuffs:Paralysis}Paralysis is inflicted on any them
+        limits:
+          - role: healer
+  - name: Captain Madison
+    steps:
+      - text: Focus adds first
+  - name: Captain Madison (Again)
+    steps:
+      - text: AoE down the dogs once they spawn
+        limits:
+          - role: tank # Only ones with AoE at this level unless I'm mistaken
+  - name: Denn the Orcatoothed
+    steps:
+      - text: Focus down boss, ignore grates

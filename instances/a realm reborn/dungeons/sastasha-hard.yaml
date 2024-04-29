@@ -1,0 +1,26 @@
+name: Sastasha (Hard)
+encounters:
+  - name: Karlabos
+    steps:
+      - text: Spread out
+      - text: Members with ${Debuffs:Prey}Prey debuff will get stunned, can pass to other members on touch
+      - text: Stun boss when it's casting ${Actions:Tail Screw}Tail Screw
+        limits:
+          - roles: # Technically white mage can stun as well with Holy, but timing that is practically impossible
+              - melee-dps
+              - tank
+      - text: ${Actions:Esuna}Esuna ${Debuffs:Slime}Slime ASAP
+        limits:
+          - role: healer
+  - name: Captain Madison
+    steps:
+      - text: Kill Captain's Guard adds
+      - text: Focus boss after charge to stop his shooting spree
+  - name: Kraken
+    steps:
+      - text: Ignore tentacles
+      - text: Focus Kraken's Arms
+      - text: Ignore ${Actions:Ink Jet}Ink-Jet
+      - text: ${Actions:Esuna}Esuna ${Debuffs:Blind}Blind
+        limits:
+          - role: healer

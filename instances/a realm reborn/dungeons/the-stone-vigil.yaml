@@ -1,0 +1,18 @@
+name: The Stone Vigil
+encounters:
+  - name: Chudo-Yudo
+    steps:
+      - text: Tank the boss away from the party
+        limits:
+          - role: tank
+      - text: Stay behind the boss at all times
+        limits:
+          - role: tank
+            invert: true
+  - name: Koschchei
+    steps:
+      - tankBuster: true
+      - text: Boss spawns typhoons at the outer edge of the arena, after a while they will start to move slowly across. Avoid them
+  - name: Isgebind
+    steps:
+      - text: When the boss flies away, stay slightly off the center to be able to quickly dodge the massive line AoEs that he will shortly fire off

@@ -1,0 +1,16 @@
+name: The Sunken Temple of Qarn
+encounters:
+  - name: Teratotaur
+    steps:
+      - text: Kill Dung Wespe adds quickly
+      - text: Once boos inflicts ${Debuffs:Doom}Doom on you, step on the glowing plate to dispel it
+  - name: Temple Guardian
+    steps:
+      - text: Attack the Golem Soulstone to make the boss vulnerable to damage
+  - name: Adjudicator
+    steps:
+      - text: Destroy the Mythril Verges to reduce the amount of AoEs on the party
+        limits:
+          - role: dps
+      - text: Stand inside the black box to damage the Mythril Verge inside of it
+      - text: Kill the Sun Juror on top of the button-like protrusions on the ground

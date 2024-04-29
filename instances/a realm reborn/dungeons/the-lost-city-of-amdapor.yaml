@@ -1,0 +1,23 @@
+name: The Lost City of Amdapor
+encounters:
+  - name: Decaying Gourmand
+    steps:
+      - text: When one party member gets devoured, attack Voracious Maw to rescue them
+  - name: Arioch
+    steps:
+      - text: Be the only one in front of Ranch Wamoura adds to get the ${Debuffs:Scale Flakes}Scale Flakes debuff (boss attacks person with most stacks)
+        limits:
+          - role: tank
+      - text: Pull another add if your debuff is about to run out
+        limits:
+          - role: tank
+      - text: Avoid standing in front of Ranch Wamoura adds to avoid getting the ${Debuffs:Scale Flakes}Scale Flakes debuff
+        limits:
+          - role: tank
+            invert: true
+  - name: Diabolos
+    steps:
+      - text: Memorize two matching doors (red/blue/lightgreen/darkgreen), have one player open one of them
+      - text: Once the boss is about halfway into casting Ruinous Omen, open the other door to avoid being ruined
+      - text: While traversing the doors, memorize a new set and repeat
+      - text: When targeted with a big target icon, move away to drop an AoE orb away from players and doors

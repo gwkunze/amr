@@ -1,0 +1,18 @@
+name: Brayflox's Longstop (Hard)
+encounters:
+  - name: Illuminati Commander
+    steps:
+      - text: Kill adds ASAP
+        limits:
+          - role: dps
+  - name: Magitek Vangob G-III
+    steps:
+      - text: Kite boss slowly around the arena to limit the spread puddles
+        limits:
+          - role: tank
+      - text: Kill adds ASAP
+  - name: Gobmachine G-VI
+    steps:
+      - text: When boss starts circling the room, kill adds and attack (AoE) bombs to move them out of the center
+      - text: Kill Giant Bomb quickly
+      - text: Dodge when it stops circling and charges across the room

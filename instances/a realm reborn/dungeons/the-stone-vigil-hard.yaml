@@ -1,0 +1,20 @@
+name: The Stone Vigil (Hard)
+encounters:
+  - name: Gorynich
+    steps:
+      - text: Stay behind boss to avoid frontal attacks
+      - text: Kill adds ASAP
+      - text: Make sure boss isn't hit by adds' death-throe AoEs
+  - name: Cuca Fera
+    steps:
+      - text: Each player should man (person?) one cannon
+      - text: Use the first ability to damage the boss and kill adds
+      - text: Stop attacking the boss when its scales start glowing red to prevent retaliation damage
+      - text: You can't shoot close to your cannon, so shoot each other's adds
+      - text: Use the 2nd ability to interrupt the boss' Hard Stomp ability
+  - name: Giruveganaus
+    steps:
+      - text: This boss does not attack the tank, it attacks randomly
+      - text: Avoid the telegraphed attacks, a shoulder tackle-charge, a tail-swipe and a frontal swipe (so stay on flanks)
+      - text: After a while a clone of the boss appears, now avoid both telegraphed attacks
+      - text: 4th attack is an AoE fireball targeted at a single player

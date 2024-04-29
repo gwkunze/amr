@@ -1,0 +1,21 @@
+name: Brayflox's Longstop
+encounters:
+  - name: Great Yellow Pelican
+    steps:
+      - text: ${Actions:Esuna}Esuna whenever a player gets ${Debuffs:Poison}Poisoned
+        limits:
+          - role: healer
+      - text: Kill adds ASAP
+  - name: Inferno Drake
+    steps:
+      - text: Once Tempest Biast appears, focus it down before returning to boss
+  - name: Hellbender
+    steps:
+      - text: Once a player gets trapped in a Queer Bubble, focus it to free them
+  - name: Aiatar
+    steps:
+      - text: Avoid the green blobs which will explode after a short time
+      - text: ${Actions:Esuna}Esuna whenever a player gets ${Debuffs:Poison}Poisoned
+        limits:
+          - role: healer
+      - tankBuster: true

@@ -1,0 +1,17 @@
+name: Halatali (Hard)
+encounters:
+  - name: Pyracmon
+    steps:
+      - text: For easy avoidance, stay in melee range during Eye of the Beholder
+      - text: Activate lever once boss start casting 1000 Tonze Swing and then stand in the mammets blue puddle
+  - name: Caroblepas
+    steps:
+      - text: When the Tainted Eye becomes targetable, focus it
+      - text: When the boss casts Demonic Eye, each party member must use a seaprate orb on one of the 4 pedestals
+  - name: Gladiators
+    steps:
+      - text: Kill Silent Moss the Solemn first
+  - name: Mumuepo the Beholden and Narasimha
+    steps:
+      - text: Kill Mumuepo first
+      - text: Interact with Thal's Scepter as soon as it appears to free your tethered party members

@@ -1,0 +1,15 @@
+name: Castrum Meridianum
+encounters:
+  - name: The Black Eft
+    steps:
+      - text: AoE the boss and adds together
+      - text: Avoid the telegraphed beam attack by moving away from front
+      - text: Pick up all adds and group them together so the party can AoE them
+        limits:
+          - role: tank
+  - name: Magitek Vanguard F-1
+    steps:
+      - proximity: true
+  - name: Livia sas Junius
+    steps:
+      - proximity: true

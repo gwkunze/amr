@@ -1,0 +1,50 @@
+name: Amdapor Keep
+encounters:
+  - name: Psycheflayer
+    steps:
+      - text: Kill Lunatic Priest
+        limits:
+          - role: tank
+            invert: true
+      - text: Tank Psycheflayer on the right near lantern
+        limits:
+          - role: tank
+      - text: Interrupt / Stun Void Fire II
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+              - physical-ranged-dps
+      - text: ${Actions:Esuna}Esuna the ${Debuffs:Disease}Disease debuff
+        limits:
+          - role: healer
+      - text: Kill adds ASAP
+      - text: Interrupt / Stun Marble Marionette's Obliterate
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+              - physical-ranged-dps
+      - text: Ignore Megalith Marionette and stay near wall on the right near lantern
+  - name: Demon Wall
+    steps:
+      - text: Avoid the black areas on the ground
+      - text: Stay in center of room when boss casts Repel to avoid falling off
+      - text: Interrupt Bloodlapper's Thunderstorm if possible
+        limits:
+          - roles:
+              - tank
+              - physical-ranged-dps
+      - text: Kill adds ASAP
+  - name: Anantaboga
+    steps:
+      - text: Flank the boss to avoid front and rear cone AOEs
+        limits:
+          - role: tank
+            invert: true
+      - text: ${Actions:Esuna}Esuna the ${Debuffs:Disease}Disease debuff
+        limits:
+          - role: healer
+      - text: When boss casts Imminent Catastrophe, hide behind statues (hide from orb in the center, not boss)
+      - text: Focus down statue adds
+      - text: If you get the purple tether, move away from party and statues

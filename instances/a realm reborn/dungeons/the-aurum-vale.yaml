@@ -1,0 +1,25 @@
+name: The Aurum Vale
+encounters:
+  - name: Locksmith
+    steps:
+      - text: Interact with Morbol Fruit to get rid of ${Debuffs:Gold Lung}Gold Lung once you have at least 2 stacks
+  - name: Coincounter
+    steps:
+      - text: Stay away from the front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: 100-Tonze swipe can be stunned or interrupted
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+              - physical-ranged-dps
+  - name: Miser's Mistress
+    steps:
+      - text: Stay away from the front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: Interact with Morbol Fruit when you have 2-3 stacks of ${Debuffs:Burrs}Burrs
+      - text: Kill adds ASAP

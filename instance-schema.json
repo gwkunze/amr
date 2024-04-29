@@ -1,0 +1,320 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FFXIV A Memory Reborn Instance Schema",
+  "description": "A succinct FF14 dungeon/raid/trial reminder of mechanics",
+  "definitions": {
+    "role": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "healer"
+        },
+        {
+          "const": "tank"
+        },
+        {
+          "const": "dps"
+        },
+        {
+          "const": "physical-ranged-dps"
+        },
+        {
+          "const": "melee-dps"
+        },
+        {
+          "const": "magical-ranged-dps"
+        }
+      ]
+    },
+    "job": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "Gladiator"
+        },
+        {
+          "const": "Paladin"
+        },
+        {
+          "const": "Marauder"
+        },
+        {
+          "const": "Warrior"
+        },
+        {
+          "const": "Dark Knight"
+        },
+        {
+          "const": "Gunbreaker"
+        },
+        {
+          "const": "Conjurer"
+        },
+        {
+          "const": "White Mage"
+        },
+        {
+          "const": "Astrologian"
+        },
+        {
+          "const": "Scholar"
+        },
+        {
+          "const": "Sage"
+        },
+        {
+          "const": "Lancer"
+        },
+        {
+          "const": "Dragoon"
+        },
+        {
+          "const": "Pugilist"
+        },
+        {
+          "const": "Monk"
+        },
+        {
+          "const": "Rogue"
+        },
+        {
+          "const": "Ninja"
+        },
+        {
+          "const": "Samurai"
+        },
+        {
+          "const": "Reaper"
+        },
+        {
+          "const": "Viper"
+        },
+        {
+          "const": "Archer"
+        },
+        {
+          "const": "Bard"
+        },
+        {
+          "const": "Machinist"
+        },
+        {
+          "const": "Dancer"
+        },
+        {
+          "const": "Thaumaturge"
+        },
+        {
+          "const": "Black Mage"
+        },
+        {
+          "const": "Arcanist"
+        },
+        {
+          "const": "Summoner"
+        },
+        {
+          "const": "Red Mage"
+        },
+        {
+          "const": "Blue Mage"
+        },
+        {
+          "const": "Pictomancer"
+        },
+        {
+          "const": "Beastmaster"
+        }
+      ]
+    },
+    "limits": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#definitions/jobLimit"
+          },
+          {
+            "$ref": "#definitions/roleLimit"
+          },
+          {
+            "$ref": "#definitions/mechanicLimit"
+          }
+        ]
+      }
+    },
+    "jobLimit": {
+      "type": "object",
+      "description": "Only show this step if the player has one of the specified job (or none, if inverted)",
+      "additionalProperties": false,
+      "properties": {
+        "jobs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#definitions/job"
+          }
+        },
+        "invert": {
+          "type": "boolean"
+        }
+      }
+    },
+    "roleLimit": {
+      "type": "object",
+      "description": "Only show this step if the player has one of the specified role(s) (or none, if inverted)",
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "$ref": "#definitions/role"
+        },
+        "roles": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#definitions/role"
+          }
+        },
+        "invert": {
+          "type": "boolean"
+        }
+      }
+    },
+    "mechanicLimit": {
+      "type": "object",
+      "description": "Only show this step if the player is not familiar with the specified mechanic",
+      "additionalProperties": false,
+      "properties": {
+        "mechanic": {
+          "type": "string",
+          "oneOf": [
+            {
+              "const": "tankBuster"
+            },
+            {
+              "const": "proximity"
+            },
+            {
+              "const": "lookAway"
+            },
+            {
+              "const": "stack"
+            },
+            {
+              "const": "multiStack"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "encounters"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the instance"
+    },
+    "alternateNames": {
+      "type": "array",
+      "description": "Alternate names of the instance",
+      "items": {
+        "type": "string",
+        "description": "An alternate name of the instance"
+      }
+    },
+    "encounters": {
+      "type": "array",
+      "description": "A list of encounters within the instance",
+      "items": {
+        "type": "object",
+        "description": "An encounter within the instance",
+        "additionalProperties": false,
+        "required": [
+          "name"
+        ],
+        "minItems": 1,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the encounter, generally the name of a boss"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "text"
+                  ],
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "limits": {
+                      "$ref": "#definitions/limits"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "proximity"
+                  ],
+                  "properties": {
+                    "proximity": {
+                      "const": true
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "tankBuster"
+                  ],
+                  "properties": {
+                    "tankBuster": {
+                      "const": true
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "stack"
+                  ],
+                  "properties": {
+                    "stack": {
+                      "const": true
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "knockback"
+                  ],
+                  "properties": {
+                    "knockback": {
+                      "const": true
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

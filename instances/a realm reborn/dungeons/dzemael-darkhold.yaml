@@ -1,0 +1,28 @@
+name: Dzemael Darkhold
+encounters:
+  - name: First Trash Section
+    steps:
+      - text: Stand in the purple ground to avoid damage from periodic AoEs
+      - text: Draw mob groups into the purple ground so the party can safely kill them
+        limits:
+          - role: tank
+  - name: All-seeing Eye
+    steps:
+      - text: Pull the boss into the purple ground to remove its invulnerability
+        limits:
+          - role: tank
+      - text: Stand in the purple ground to avoid damage from the boss' AoEs
+      - text: After a while the purple ground will dissipate so move to another patch
+  - name: Taulurd
+    steps:
+      - text: Pray to the almighty Yoshi-P that this boss will see a revamp soon as it's one of the worst in the game now that the Copperbell mines have been revamped.
+  - name: Batraal
+    steps:
+      - text: Tank the boss away from the party
+        limits:
+          - role: tank
+      - text: Don't stand in front of the boss if at all possible
+        limits:
+          - role: tank
+            invert: true
+      - text: Once Batraal tethers to a crystal formation, kill crystals ASAP (3 times)

@@ -1,0 +1,32 @@
+name: Copperbell Mines - Hard
+encounters:
+  - name: Hecatoncheir Mastermind
+    steps:
+      - text: Kill Flambeau adds before they reach the burning ground (stunnable)
+  - name: Gogmagolem and Biggy
+    steps:
+      - text: Point boss away from party
+        limits:
+          - role: tank
+      - text: Avoid standing in front of boss
+        limits:
+          - role: tank
+            invert: true
+      - text: one DPS or Healer must operate Improved Blasting Device to spawn Waymaker Bomb, pickup the bomb and put it in the golem's path when it's 5 seconds from exploding
+        limits:
+          - roles:
+              - dps
+              - healer
+      - text: Kill adds
+      - text: Avoid black bombs and very large bombs
+  - name: Ouranos
+    steps:
+      - text: Point boss away from party
+        limits:
+          - role: tank
+      - text: Avoid standing in front of boss
+        limits:
+          - role: tank
+            invert: true
+      - text: Kill adds ASAP
+      - text: When Sand Worm is Searching for Fodder, move a Crystallized Rock into the sand and move away.
