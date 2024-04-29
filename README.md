@@ -20,7 +20,9 @@ Simply run the application, a window should show up looking like this:
 
 ![AMR Main Window](docs/interface.png)
 
-Click a dungeon to see the instructions for it appear on your monitor, optionally select the monitor your game runs on in the "Select the overlay monitor"-dropdown to have the instruction appear on the correct monitor. Select your current job to filter out instructions unrelated to your job, select any mechanics you're already familiar with play around with the sliders to pick an appropriate position for the instructions.
+Click a dungeon to see the instructions for it appear on your monitor, optionally select the monitor your game runs on in the "Select the overlay monitor"-dropdown to have the instruction appear on the correct monitor. Select your current job to filter out instructions unrelated to your job, select any mechanics you're already familiar with play around with the sliders to pick an appropriate position for the instructions. The result will look something like this:
+
+![AMR In-Game Example](docs/in-game.png)
 
 ### While playing the game
 
