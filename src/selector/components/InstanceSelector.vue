@@ -1,6 +1,7 @@
 <script setup>
 import InputText from 'primevue/inputtext';
 import FloatLabel from 'primevue/floatlabel';
+import Button from 'primevue/button';
 import Instance from './Instance.vue';
 import { ref, computed } from 'vue';
 
@@ -77,11 +78,14 @@ defineExpose({ forceFocus });
 
 <template>
     <div class="instance-selector">
-        <FloatLabel class="floatlabel">
-            <InputText ref="pFilter" id="filter" type="text" v-model="instanceFilter" @keyup.up="up" @keyup.down="down"
-                @keyup.enter="enter" />
-            <label for="filter">Select Instance</label>
-        </FloatLabel>
+        <div class="top">
+            <FloatLabel class="floatlabel">
+                <InputText ref="pFilter" id="filter" type="text" v-model="instanceFilter" @keyup.up="up"
+                    @keyup.down="down" @keyup.enter="enter" />
+                <label for="filter">Select Instance</label>
+            </FloatLabel>
+            <Button label="Clear" @click="() => selectInstance(null, null)" />
+        </div>
         <div class="instances">
             <div v-for="(instance, index) in filteredInstances" :key="instance.name" ref="instanceItems"
                 @click="() => selectInstance(instance, index)">
@@ -108,14 +112,20 @@ div.instances {
 div.instances>div {
     cursor: pointer;
 }
+
+.top {
+    margin-bottom: .7em;
+    display: flex;
+    flex-direction: row;
+}
+
+.top .floatlabel {
+    flex: 1;
+}
 </style>
 
 <style>
 #filter {
     width: 100%;
-}
-
-.floatlabel {
-    margin-bottom: .7em;
 }
 </style>

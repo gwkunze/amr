@@ -31,8 +31,12 @@ const currentEncounterSteps = computed(() => {
 });
 
 const updateFromState = (s) => {
-    instance.value = loadInstance(s.instance);
-    encounter.value = s.encounter;
+    if (s.instance === null) {
+        instance.value = null;
+    } else {
+        instance.value = loadInstance(s.instance);
+        encounter.value = s.encounter;
+    }
     state.value = s;
 
     overlayPositionStyle.value.top = `${s.overlayPosition.top}%`;
@@ -65,7 +69,6 @@ AMemoryReborn.onUpdateState(updateFromState);
                 instance.encounters[encounter
                     + 1].name }} 🡢</h2>
         </template>
-        <h1 v-else>No instance selected (Press Ctrl-Alt-S)</h1>
     </div>
 </template>
 
