@@ -1,0 +1,34 @@
+name: The Howling Eye (Hard)
+alternateNames:
+  - Garuda (Hard)
+encounters:
+  - name: Garuda - Phase 1
+    steps:
+      - text: Tank boss at the edge where she spawns, away from the center
+        limits:
+          - role: tank
+      - text: Stay away from the pillars to prevent them getting caught in AoEs
+        limits:
+          - role: tank
+            invert: true
+      - text: "On Mistral Song/Shriek: Hide behind pillars"
+      - text: Kill Razor Plume adds ASAP
+      - text: After Aerial Blast move to Phase 2
+  - name: Garuda - Phase 2
+    steps:
+      - text: Tank boss in the north-west (↖)
+        limits:
+          - role: tank
+      - text: Stand on the west edge (←)
+        limits:
+          - roles:
+              - healer
+              - physical-ranged-dps
+              - magical-ranged-dps
+      - text: Each tank pick up one of Suparna and Chirada, tank away from party
+        limits:
+          - role: tank
+      - text: Kill the add with the green beam linking it to Garuda first
+      - text: Kill the Satin Plume ASAP
+      - text: Ignore Razor Plumes
+      - text: Once the whirlwinds end, move to center of the room

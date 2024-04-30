@@ -1,0 +1,17 @@
+name: The Navel (Extreme)
+alternateNames:
+  - Titan (Extreme)
+encounters:
+  - name: Titan
+    steps:
+      - text: Everyone except the main tank should stand bunched up behind the boss
+      - text: When targeted for Gaol, stand directly under Titan
+        limits:
+          - role: dps
+      - text: When targeted for Gaol, stand at the edge away from Titan
+        limits:
+          - role: healer
+      - text: Everyone, including tank move behind boss when casting Upheaval
+      - text: When 9 bombs spawn at the same time in a grid, kill one
+      - text: With other bomb patterns, move to last spawned, then into exploded bomb
+      - text: Focus on Titan's Heart when it appears

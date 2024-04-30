@@ -1,0 +1,10 @@
+name: The Bowl of Embers
+alternateNames:
+  - Ifrit
+encounters:
+  - name: Ifrit
+    steps:
+      - text: Tank the boss away from the party at the edge of the arena
+        limits:
+          - role: tank
+      - text: Once the Internal Nail appear, switch to it an kill it ASAP
