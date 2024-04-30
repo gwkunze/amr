@@ -1,0 +1,11 @@
+name: The Porta Decumana
+alternateNames:
+  - Ultima
+  - The Ultima Weapon
+encounters:
+  - name: The Ultima Weapon
+    steps:
+      - proximity: true
+      - knockback: true
+      - stack: true
+      - text: When 4 tethered orbs appear, walk into them to reduce the damage they do
