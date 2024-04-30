@@ -1,0 +1,9 @@
+name: The Navel
+alternateNames:
+  - Titan
+encounters:
+  - name: Titan
+    steps:
+      - proximity: true
+      - text: When a player is caught in Granite Gaol, attack the Gaol to free them
+      - text: Attack Titan's Heart when it appears

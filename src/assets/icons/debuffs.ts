@@ -15,6 +15,7 @@ import scaleFlakesIcon from '../../../img/debuff/scale-flakes.png';
 import doomIcon from '../../../img/debuff/doom.png';
 import reducedImmunityIcon from '../../../img/debuff/reduced-immunity.png';
 import heavyIcon from '../../../img/debuff/heavy.png';
+import vulnerabilityUpIcon from '../../../img/debuff/vulnerability-up.png';
 
 import { ImageSet } from './types';
 
@@ -36,4 +37,5 @@ export const Debuffs: ImageSet = new Map([
     ['Doom', doomIcon],
     ['Reduced Immunity', reducedImmunityIcon],
     ['Heavy', heavyIcon],
+    ['Vulnerability Up', vulnerabilityUpIcon],
 ]);

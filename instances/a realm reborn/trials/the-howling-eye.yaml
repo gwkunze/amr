@@ -1,0 +1,17 @@
+name: The Howling Eye
+alternateNames:
+  - Garuda
+encounters:
+  - name: Garuda - Phase 1
+    steps:
+      - text: Tank boss at the edge where she spawns, away from the center
+        limits:
+          - role: tank
+      - text: "On Mistral Song: Hide behind pillars"
+      - text: Kill adds ASAP
+      - text: After Aerial Blast move to Phase 2
+  - name: Garuda - Phase 2
+    steps:
+      - text: "On Mistral Shriek: Move away from boss"
+      - text: "On Mistral Song: Move behind boss"
+      - text: Kill adds ASAP
