@@ -44,6 +44,8 @@ const createOverlayWindow = async (monitor: number) => {
     const bounds = screen.getAllDisplays()[monitor].bounds;
     overlayWindow.setPosition(bounds.x, bounds.y);
   }
+
+  overlayWindow.setAlwaysOnTop(true, 'screen-saver');
   overlayWindow.on('closed', () => { overlayWindow = null; });
 };
 
@@ -68,6 +70,7 @@ const createSelectorWindow = async (monitor: number) => {
     const bounds = screen.getAllDisplays()[monitor].bounds;
     selectorWindow.setPosition(bounds.x, bounds.y);
   }
+
   selectorWindow.on('closed', () => { selectorWindow = null; });
   selectorWindow.on('close', () => {
     overlayWindow.close();
