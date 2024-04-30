@@ -1,0 +1,12 @@
+name: Battle on the Big Bridge
+alternateNames:
+  - Gilgamesh
+  - Greg
+encounters:
+  - name: Gilgamesh
+    steps:
+      - text: When turned into a ${Debuffs:Toad}Toad, run away from Enkidu
+      - text: Heal ${Debuffs:Confusion}Confused players to full to cure the debuff
+        limits:
+          - role: healer
+      - text: When marked, move away from party
