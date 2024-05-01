@@ -46,6 +46,7 @@ const createOverlayWindow = async (monitor: number) => {
   }
 
   overlayWindow.setAlwaysOnTop(true, 'screen-saver');
+
   overlayWindow.on('closed', () => { overlayWindow = null; });
 };
 

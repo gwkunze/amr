@@ -4,6 +4,8 @@ import inkJetIcon from '../../../img/action/ink-jet.png';
 import standardFinishIcon from '../../../img/action/standard-finish.png';
 import fireIcon from '../../../img/action/fire.png';
 import eruptionIcon from '../../../img/action/eruption.png';
+import theDragonsVoiceIcon from '../../../img/action/the-dragons-voice.png';
+import theRamsVoiceIcon from '../../../img/action/the-rams-voice.png';
 
 import { ImageSet } from './types';
 
@@ -14,5 +16,7 @@ export const Actions: ImageSet = new Map([
     ['Standard Finish', standardFinishIcon],
     ['Fire', fireIcon],
     ['Eruption', eruptionIcon],
+    ["The Dragon's Voice", theDragonsVoiceIcon],
+    ["The Ram's Voice", theRamsVoiceIcon],
 ]);
 
