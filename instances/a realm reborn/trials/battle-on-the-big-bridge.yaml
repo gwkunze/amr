@@ -6,7 +6,7 @@ encounters:
   - name: Gilgamesh
     steps:
       - text: When turned into a ${Debuffs:Toad}Toad, run away from Enkidu
-      - text: Heal ${Debuffs:Confusion}Confused players to full to cure the debuff
+      - text: To cure ${Debuffs:Confusion}Confused heal them to full
         limits:
           - role: healer
       - text: When marked, move away from party

@@ -1,0 +1,16 @@
+name: "A Relic Reborn: The Hydra"
+encounters:
+  - name: Hydra
+    steps:
+      - text: Both tanks should stand in front of boss to share Trimvirate damage
+        limits:
+          - role: tank
+      - text: Don't stand in front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: ${Actions:Esuna}Esuna all the things! (Except ${Debuffs:Infirmity}Infirmity)
+        limits:
+          - role: healer
+      - text: "On Fear Itself: move into melee range"
+      - text: Kill Wyvern add ASAP

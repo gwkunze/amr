@@ -17,9 +17,10 @@ import reducedImmunityIcon from '../../../img/debuff/reduced-immunity.png';
 import heavyIcon from '../../../img/debuff/heavy.png';
 import vulnerabilityUpIcon from '../../../img/debuff/vulnerability-up.png';
 import toadIcon from '../../../img/debuff/toad.png';
+import infirmityIcon from '../../../img/debuff/infirmity.png';
+import confusionIcon from '../../../img/debuff/confusion.png';
 
 import { ImageSet } from './types';
-import { toDisplayString } from 'vue';
 
 export const Debuffs: ImageSet = new Map([
     ['Paralysis', paralysisIcon],
@@ -41,4 +42,6 @@ export const Debuffs: ImageSet = new Map([
     ['Heavy', heavyIcon],
     ['Vulnerability Up', vulnerabilityUpIcon],
     ['Toad', toadIcon],
+    ['Infirmity', infirmityIcon],
+    ['Confusion', confusionIcon],
 ]);
