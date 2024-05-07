@@ -1,0 +1,44 @@
+name: The Bowl of Embers (Hard)
+alternateNames:
+  - Ifrit (Hard)
+encounters:
+  - name: Ifrit - Phase 1 & 2
+    steps:
+      - text: Tank the boss away from the party at the edge of the arena
+        limits:
+          - role: tank
+      - text: Make sure not to stand in front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: Stun boss (ONLY!) when it's casting ${Actions:Eruption}Eruption
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+      - text: "Vulcan Burst: Move out of melee range"
+      - text: When the boss moves to the edge of the arena facing inwards, move out of the path of his Dash
+      - text: ~50% Health, move to Phase 3
+  - name: Ifrit - Phase 3
+    steps:
+      - text: Prioritize killing the 4 summoned Infernal Nails
+      - text: Use limit break to attack 2 nails
+        limits:
+          - jobs:
+              - Black Mage
+              - Summoner
+              - Red Mage
+      - text: Prepare to AoE heal after boss casts Hellfire
+        limits:
+          - role: healer
+      - text: Bunch up on Hellfire so shielding and AoE healing can happen
+      - text: After Hellfire, move to Phase 4
+  - name: Ifrit - Phase 4
+    steps:
+      - text: Stun boss (ONLY!) when it's casting ${Actions:Eruption}Eruption
+        limits:
+          - roles:
+              - tank
+              - melee-dps
+      - text: Stay close to boss so you can easily dodge the near-arena-wide Radiant Plumes by moving behind him
+      - text: When Ifrit does a triple Dash attack, they go in clockwise order

@@ -1,0 +1,12 @@
+name: The Striking Tree (Hard)
+alternateNames:
+  - Ramuh (Hard)
+encounters:
+  - name: Ramuh
+    steps:
+      - text: Off tank pop orbs, but make sure at least 3 are left
+        limits:
+          - role: tank
+      - text: When anyone is afflicted by ${Debuffs:Terror}Terror, hit them with the Thunderstorm AoE if you're targeted with it
+      - text: Kill Grey Arbiter adds ASAP
+      - text: When tethered stop using abilities, one of the two tethered player needs to pick up three orbs to dispel the thether

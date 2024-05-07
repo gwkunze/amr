@@ -1,0 +1,37 @@
+name: The Akh Afah Amphitheatre (Extreme)
+alternateNames:
+  - Shiva (Extreme)
+encounters:
+  - name: Shiva
+    steps:
+      - text: Tank boss facing away from party in center
+        limits:
+          - role: tank
+      - text: Assign tank to Shiva's Sword and Staff forms. Swap when Shiva swaps
+        limits:
+          - role: tank
+      - text: Sword tank should avoid Glacier Bash by running forward through boss
+        limits:
+          - role: tank
+      - text: Sword tank should face Shiva towards party when attacked by Icebrand
+        limits:
+          - role: tank
+      - text: When Shiva switches to staff, immediately spread towards the edge of the arena
+      - text: When Shiva switches to sword, share-soak damage from the Icebrand attack
+        limits:
+          - role: tank
+            invert: true
+      - text: Stay away from the front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: Kill adds ASAP
+        limits:
+          - role: tank
+            invert: true
+      - text: Staff tank tanks adds
+        limits:
+          - role: tank
+      - text: Don't move when afflicted by Thin Ice # Icon would be nice
+      - text: Stand directly behind boss to avoid bow attacks
+      - text: When someone is marked while in bow form, everyone except marked player move in front of boss, tank boss at edge

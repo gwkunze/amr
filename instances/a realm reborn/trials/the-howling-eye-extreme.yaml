@@ -1,0 +1,40 @@
+name: The Howling Eye (Extreme)
+alternateNames:
+  - Garuda (Extreme)
+encounters:
+  - name: Garuda - Phase 1
+    steps:
+      - text: Tank boss at the edge where she spawns, away from the center
+        limits:
+          - role: tank
+      - text: Stay away from the pillars to prevent them getting caught in AoEs
+        limits:
+          - role: tank
+            invert: true
+      - text: "On Mistral Song/Shriek: Hide behind pillars"
+      - text: Prioritize Satin Plume Add
+      - text: Kill Razor Plume adds after
+  - name: Garuda - Phase 2
+    steps:
+      - text: Main-tank should tank Suparna, Off-tank Chirada
+        limits:
+          - role: tank
+      - text: Kill Chirada first
+  - name: Garuda - Phase 3
+    steps:
+      - text: DON'T kill Spiny Plume, kill the others
+      - text: Tank Spiny Plume and swap when you reach 2 stacks of Thermal Low
+        limits:
+          - role: tank
+      - text: When Garuda disappears, kill Spiny Plume, dodge death throe aoe and then stand under shield
+  - name: Garuda - Phase 4
+    steps:
+      - text: Main-tank should tank Suparna, Off-tank Chirada
+        limits:
+          - role: tank
+      - text: Kill Chirada first
+      - text: DON'T kill Spiny Plume, kill the others
+      - text: Tank Spiny Plume and swap when you reach 2 stacks of Thermal Low
+        limits:
+          - role: tank
+      - text: When Garuda disappears, kill Spiny Plume, dodge death throe aoe and then stand under shield

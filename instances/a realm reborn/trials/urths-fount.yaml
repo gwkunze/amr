@@ -1,0 +1,11 @@
+name: Urth's Fount
+alternateNames:
+  - Odin
+encounters:
+  - name: Odin
+    steps:
+      - text: Spread out to prevent getting hit be AoEs
+      - text: ${Actions:Esuna}Esuna players afflicted by ${Debuffs:Bleed}Bleed when possible
+        limits:
+          - role: healer
+      - text: Kill Gungnir adds ASAP

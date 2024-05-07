@@ -1,0 +1,22 @@
+name: The Dragon's Neck
+alternateNames:
+  - Ultros
+  - Typhon
+encounters:
+  - name: Ultros & Typhon
+    steps:
+      - text: Don't get knocked out of the arena!
+      - text: Tank bosses separately
+        limits:
+          - role: tank
+      - text: Focus down Typhon first
+        limits:
+          - role: dps
+      - text: When transformed into ${Debuffs:Imp}Imps, gain at least 2 stacks of wet plate by being hit by ${Actions:Aqua Breath}Aqua Breath
+        limits:
+          - role: dps
+      - text: When Typhon starts casting Big Sneeze, use Imp Punch on him
+        limits:
+          - role: dps
+      - text: When Typhon casts Snortsault, move Ultros and all DPS to the same flank of Typhon
+      - text: When Typhon casrs Snort, move to center

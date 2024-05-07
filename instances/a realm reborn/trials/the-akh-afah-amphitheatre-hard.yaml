@@ -1,0 +1,15 @@
+name: The Akh Afah Amphitheatre (Hard)
+alternateNames:
+  - Shiva (Hard)
+encounters:
+  - name: Shiva
+    steps:
+      - text: Tank boss facing away from party
+        limits:
+          - role: tank
+      - text: Stay away from the front of the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: Kill adds ASAP
+      - text: When Shiva summons a bunch of AoE circles covering the entire arena, stand on one of the last ones summoned next to the first one and move into it once it explodes.

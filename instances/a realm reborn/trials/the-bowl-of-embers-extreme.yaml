@@ -1,0 +1,35 @@
+name: The Bowl of Embers (Extreme)
+alternateNames:
+  - Ifrit (Extreme)
+encounters:
+  - name: Ifrit - Phase 1
+    steps:
+      - text: Tank Swap when you get 3 Suppuration stacks
+        limits:
+          - role: tank
+      - text: DPS stick together and dodge ${Actions:Eruption}Eruption as a group
+        limits:
+          - role: dps
+      - text: When afflicted by Searing Wind, move away from party
+        limits:
+          - role: healer
+      - text: When the nails appear kill them one by one, waiting after each for the ${Debuffs:Vulnerability Up}Vulnerability Up debuff to expire
+      - text: Phase 2 on Hellfire
+  - name: Ifrit - Phase 2-4
+    steps:
+      - text: On 4xDash stand next to first Ifrit and run clockwise with him to avoid the 4 charges
+        limits:
+          - role: healer
+            invert: true
+      - text: If afflicted by Searing Wind, stay away and possibly face tank a single Dash and stay put after to avoid the other 3. Otherwise move with party clockwise starting next to leftmost Ifrit
+        limits:
+          - role: healer
+      - text: Radiant Plumes has two safe spots at ↗ and ↙ which rotate slightly clockwise on future casts
+      - text: When chained by fetters, stay close to each other
+        limits:
+          - roles:
+              - tank
+              - dps
+      - text: Use LB3 on center Large Nail when it's spawned unless confident in party's damage
+        limits:
+          - role: melee-dps

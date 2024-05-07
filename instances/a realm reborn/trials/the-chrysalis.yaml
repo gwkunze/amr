@@ -1,0 +1,18 @@
+name: The Chrysalis
+alternateNames:
+  - Nabriales
+encounters:
+  - name: Nabriales
+    steps:
+      - text: Absorb orbs, alternate between types to reduce damage
+      - text: Tank shadow sprites away from arena
+        limits:
+          - role: tank
+      - text: Pop as many cooldowns as you can just before being sucked into portal
+      - text: Soak all the meteors
+        limits:
+          - role: tank
+      - text: Let the tanks soak all the meteors
+        limits:
+          - role: tank
+            invert: true

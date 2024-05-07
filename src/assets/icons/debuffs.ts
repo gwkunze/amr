@@ -15,6 +15,14 @@ import scaleFlakesIcon from '../../../img/debuff/scale-flakes.png';
 import doomIcon from '../../../img/debuff/doom.png';
 import reducedImmunityIcon from '../../../img/debuff/reduced-immunity.png';
 import heavyIcon from '../../../img/debuff/heavy.png';
+import vulnerabilityUpIcon from '../../../img/debuff/vulnerability-up.png';
+import toadIcon from '../../../img/debuff/toad.png';
+import infirmityIcon from '../../../img/debuff/infirmity.png';
+import confusionIcon from '../../../img/debuff/confusion.png';
+import terrorIcon from '../../../img/debuff/terror.png';
+import chaosIcon from '../../../img/debuff/chaos.png';
+import seducedIcon from '../../../img/debuff/seduced.png';
+import impIcon from '../../../img/debuff/imp.png';
 
 import { ImageSet } from './types';
 
@@ -36,4 +44,12 @@ export const Debuffs: ImageSet = new Map([
     ['Doom', doomIcon],
     ['Reduced Immunity', reducedImmunityIcon],
     ['Heavy', heavyIcon],
+    ['Vulnerability Up', vulnerabilityUpIcon],
+    ['Toad', toadIcon],
+    ['Infirmity', infirmityIcon],
+    ['Confusion', confusionIcon],
+    ['Terror', terrorIcon],
+    ['Chaos', chaosIcon],
+    ['Seduced', seducedIcon],
+    ['Imp', impIcon],
 ]);

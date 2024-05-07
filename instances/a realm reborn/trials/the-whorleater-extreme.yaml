@@ -1,0 +1,25 @@
+# This one could definitely use some more love, especially on when to use Elemental Converter and how to deal with spumes
+name: The Whorleater (Extreme)
+alternateNames:
+  - Leviathan (Extreme)
+encounters:
+  - name: Leviathan
+    steps:
+      - text: Whenever Leviathan disappears, check for water plume and move to opposite end of platform
+      - text: "Kill adds ASAP (Prio: Wavetooth -> Wavespine)"
+      - text: Swap healing the Tank with 'Briny Mirror'-debuff before your Briny Veil debuff gets to high (HoTs are exempt)
+        limits:
+          - role: healer
+      - text: Don't stand close to party as you'll get targeted by water spouts
+        limits:
+          - role: healer
+      - text: Attack the head only
+        limits:
+          - role: magical-ranged-dps
+      - text: Attack the tail only
+        limits:
+          - role: physical-ranged-dps
+      - text: Main tank -> Head (and stand in corner), Off-tank -> Tail (and deal with adds)
+        limits:
+          - role: tank
+      - text: When Leviathan does a spinning dive from the shorter edge of the plarform, use Elemental Converter after
