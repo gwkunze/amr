@@ -1,0 +1,13 @@
+name: "A Relic Reborn: The Chimera"
+encounters:
+  - name: Dhorme Chimera
+    steps:
+      - text: Pull the boss outside the cave for more manueverablity space
+        limits:
+          - role: tank
+      - text: ${Actions:Esuna}Esuna all the things!
+        limits:
+          - role: healer
+      - text: "On ${Actions:The Dragon's Voice}The Dragon's Voice: Move to melee range"
+      - text: "On ${Actions:The Ram's Voice}The Ram's Voice: Move away from the boss"
+      - text: When an electrical orb targets you, move away from the party

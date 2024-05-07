@@ -36,3 +36,6 @@ I don't _think_ so, this application is completely separate from the game, it do
 
 ### Hey dungeon 'Insert-Dungeon-Name-Here' is missing, when will you add it?
 I dunno, I'll try to add more as I go on but feel free to add it yourself, the format should mostly speak for itself and there is a schema for this format to ensure you don't make mistakes. PRs are welcome.
+
+### The instructions for the Extremes SUCK! Why is that?
+I'm a filthy casual who doesn't do extremes (synced), so all the information is second hand at best. Feel free to improve. Although partially I feel that Extremes/Savages/Ultimates are beyond what my application is meant for.

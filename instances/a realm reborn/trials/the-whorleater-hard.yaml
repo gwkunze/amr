@@ -1,0 +1,21 @@
+name: The Whorleater (Hard)
+alternateNames:
+  - Leviathan (Hard)
+encounters:
+  - name: Leviathan
+    steps:
+      - text: Once boss dives, move to the opposite side of the barge where plumes of water appear
+      - text: Attack the head only as tail reflect magic damage
+        limits:
+          - role: magical-ranged-dps
+      - text: Attack the tail once it appear as head reflects ranged physical damage
+        limits:
+          - role: physical-ranged-dps
+      - text: Attack either head or tail
+        limits:
+          - roles:
+              - melee-dps
+              - tank
+              - healer
+      - text: Kill adds ASAP
+      - text: When the Elemental Converter becomes available, one player should use it

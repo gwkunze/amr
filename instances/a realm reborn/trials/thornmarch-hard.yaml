@@ -1,0 +1,9 @@
+name: Thornmarch (Hard)
+alternateNames:
+  - Good King Moggle Mog (Hard)
+encounters:
+  - name: Good King Moggle Mog XII
+    steps:
+      - text: When 4 blue circles with red filling appear, one players must stand in each
+      - stack: true
+      - text: When red chevrons pointing to one of the tanks appear, tanks should stack together but no one else.

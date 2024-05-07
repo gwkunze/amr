@@ -1,0 +1,11 @@
+name: The Navel (Hard)
+alternateNames:
+  - Titan (Hard)
+encounters:
+  - name: Titan
+    steps:
+      - proximity: true
+      - text: When bombs drop, stand where the last one drop and after the first one explodes, move there. Or move to gaps if they are big
+      - text: When a player is caught in Granite Gaol, attack the Gaol to free them
+      - text: Attack Titan's Heart when it appears
+      - text: Bunch up on Earthen Fury for easy shields/AoE heals

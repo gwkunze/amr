@@ -1,0 +1,16 @@
+name: Battle in the Big Keep
+alternateNames:
+  - Gilgamesh
+  - Greg
+encounters:
+  - name: Gilgamesh & Enkidu - Phase 1
+    steps:
+      - text: Focus all damage on Enkidu
+      - text: When targeted by crosshairs, move away from party
+      - text: When tethered, move towards each other
+      - text: When tuned into chicken, run into tornados
+      - text: When Enkidu is killed move to Phase 2
+  - name: Gilgamesh - Phase 2
+    steps:
+      - text: When a healer is chained, attack the Iron Chain to free them
+      - text: Kill dragon heads

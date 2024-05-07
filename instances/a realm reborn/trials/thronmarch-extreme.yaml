@@ -1,0 +1,31 @@
+name: Thornmarch (Extreme)
+alternateNames:
+  - Good King Moggle Mog (Extreme)
+encounters:
+  - name: Good King Moggle Mog XII - Phase 1 & 2
+    steps:
+      - text: When the mooglesguard are summoned, bring them all to about 5% health before killing any of them
+      - text: Main tank should tank King & Whiskerwall at the arena edge. Move away from moogles to prevent king from buffing them
+        limits:
+          - role: tank
+      - text: Off tank should tank Ruffletuft opposite of main tank
+        limits:
+          - role: tank
+      - text: Interrupt Pukla Puki's Pom Flare by doing ~1000 damage
+        limits:
+          - role: tank
+      - text: When Pukla Puki shouts Delta, move out of center
+      - text: With all mooglesguard at low health, kill one and move to phase 3
+  - name: Good King Moggle Mog XII - Phase 3
+    steps:
+      - text: When Furryfoot casts Holy, interrupt by damage
+      - text: ${Actions:Esuna}Esuna the Bemoggled debuff ASAP
+        limits:
+          - role: healer
+      - text: When marked, spread away from party
+      - text: ${Actions:Esuna}Esuna the Thrown for a Loop debuff ASAP
+        limits:
+          - role: healer
+      - text: Once again, once all mooglesguard at low health, kill one
+      - text: Kill all moogles before King finishes Memento Moogle
+      - text: "Kill order: Pukla ⇒ Furryfoot ⇒ Woolywart ⇒ Pukna ⇒ Puksi ⇒ Whiskerwall ⇒ Ruffletuft"
