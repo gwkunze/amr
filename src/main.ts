@@ -186,6 +186,12 @@ app.on('ready', async () => {
     pendingFocus = true;
   });
 
+  globalShortcut.register('CommandOrControl+Alt+X', () => {
+    state.instance = null;
+    state.encounter = 0;
+    pushState();
+  });
+
   globalShortcut.register('CommandOrControl+Alt+D', () => {
     if (!overlayWindow || state.instance === null) return;
     state.encounter = Math.min(state.encounter + 1, state.instance.encounters.length - 1);
