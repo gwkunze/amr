@@ -1,0 +1,16 @@
+name: The Binding Coil of Bahamut - Turn 2
+alternateNames:
+  - T2
+encounters:
+  - name: Various Nodes
+    steps:
+      - text: Tank swap on about 4 ${Debuffs:Vulnerability}Vulnerability stacks
+        limits:
+          - role: tank
+      - text: Interrupt any cast of ${Actions:High Voltage}High Voltage
+        limits:
+          - roles:
+              - tank
+              - physical-ranged-dps
+      - text: Keep party spread out
+      - text: When afflicted with Allagan Rot, touch other player once it's almost expired

@@ -1,0 +1,7 @@
+name: The Binding Coil of Bahamut - Turn 3
+alternateNames:
+  - T3
+encounters:
+  - name: Lord of the Jumping Puzzles
+    steps:
+      - text: Jump down by aiming towards the blue rings
