@@ -128,6 +128,7 @@ watch([horizonalPos, verticalPos, width], ([h, v, w]) => {
                     game
                     automatically</li>
                 <li>Switch between encounters with Ctrl-Alt-A (previous encounter) and Ctrl-Alt-D (next encounter)</li>
+                <li>Stop displaying instructions by pressing Ctrl-Alt-X</li>
             </ul>
         </div>
     </div>

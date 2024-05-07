@@ -28,6 +28,7 @@ Click a dungeon to see the instructions for it appear on your monitor, optionall
 
 While in-game, press `Ctrl-Alt-S` to bring AMR to focus and you can immediately start typing to filter the list of dungeons/trials/raids. You can select the dungeon you want by either clicking or using the arrow keys and pressing `enter`. This should bring you have to the game (only pressing `enter` does this, if you clicked you'll have to refocus the game manually). The first encounter's instructions should now be shown, you can switch between encounters with `Ctrl-Alt-A` (previous encounter) and `Ctrl-Alt-D` (next encounter) while in the game, no need to `Alt-Tab`.
 
+To remove any instructions (when you finish the instance for example), press `Ctrl-Alt-X` or click the `Clear` button in AMR.
 
 ## FAQ
 
