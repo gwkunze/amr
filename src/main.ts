@@ -155,6 +155,9 @@ app.on('ready', async () => {
     overlayWindow.setPosition(display.bounds.x, display.bounds.y);
 
     pushState();
+
+    // I think after computer sleep the always-on-topness of the window disappears, set it here so we can see if this fixes it
+    overlayWindow.setAlwaysOnTop(true, 'screen-saver');
     // TODO (low prio): Flash something on Overlay to make it clear the monitor changed
   });
 
