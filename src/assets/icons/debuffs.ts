@@ -19,6 +19,10 @@ import vulnerabilityUpIcon from '../../../img/debuff/vulnerability-up.png';
 import toadIcon from '../../../img/debuff/toad.png';
 import infirmityIcon from '../../../img/debuff/infirmity.png';
 import confusionIcon from '../../../img/debuff/confusion.png';
+import terrorIcon from '../../../img/debuff/terror.png';
+import chaosIcon from '../../../img/debuff/chaos.png';
+import seducedIcon from '../../../img/debuff/seduced.png';
+import impIcon from '../../../img/debuff/imp.png';
 
 import { ImageSet } from './types';
 
@@ -44,4 +48,8 @@ export const Debuffs: ImageSet = new Map([
     ['Toad', toadIcon],
     ['Infirmity', infirmityIcon],
     ['Confusion', confusionIcon],
+    ['Terror', terrorIcon],
+    ['Chaos', chaosIcon],
+    ['Seduced', seducedIcon],
+    ['Imp', impIcon],
 ]);

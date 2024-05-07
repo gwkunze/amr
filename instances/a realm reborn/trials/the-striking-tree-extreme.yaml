@@ -1,0 +1,14 @@
+name: The Striking Tree (Extreme)
+alternateNames:
+  - Ramuh (Extreme)
+encounters:
+  - name: Ramuh
+    steps:
+      - text: When targeted by crosshairs, move to the south of the arena, close to water
+      - text: When targeted by Thunderstorm, hit any players afflicted by ${Debuffs:Chaos}Chaos or ${Debuffs:Seduced}Seduced, otherwise avoid water on outer edge
+      - text: Don't stand closer than maximum melee range to avoid Thunderspark
+      - text: Off-tank should pick up 3 orbs to get ${Buffs:Surge Protection}Surge Protection and immediately tank swap, before main tank buff expires repeat
+        limits:
+          - role: tank
+      - text: Kill Grey Arbiter adds ASAP, start south and go clockwise
+      - text: When tethered stop using abilities, one of the two tethered player needs to pick up three orbs to dispel the thether
