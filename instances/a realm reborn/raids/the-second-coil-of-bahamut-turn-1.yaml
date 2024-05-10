@@ -1,0 +1,33 @@
+name: The Second Coil of Bahamut - Turn 1
+alternateNames:
+  - T6
+encounters:
+  - name: Rafflesia - Phase 1 & 2
+    steps:
+      - text: Tank boss facing away from party in the center
+        limits:
+          - role: tank
+      - text: Tank swap after 2-3 stacks of ${Debuffs:Vulnerability}Vulnerability
+        limits:
+          - role: tank
+      - text: Stay behind the boss
+        limits:
+          - role: tank
+            invert: true
+      - text: If Dark Matter Bulb spawns in center, kill ASAP
+      - text: When a player is marked by yellow icon, everyone but that player move temporarily in front of boss
+      - text: When boss casts Blighted Bouquet stop moving and attacking
+      - text: When boss casts Devour, move out of melee range
+      - text: Kill Dark Matter Hornet add ASAP
+      - text: When afflicted with Honey debuff, move into melee range of boss to get devoured
+      - text: Once boss casts Leafstorm, move to phase 3
+  - name: Rafflesia - Phase 3
+    steps:
+      - text: Off-tank should tank Dark Matter Slug adds
+        limits:
+          - role: tank
+      - text: Use LB3 on Dark Matter Slug adds
+        limits:
+          - role: magical-ranged-dps
+      - text: Leave one slug alive to eat the three Acidic Honeys, kill it after
+      - text: When tethered, move away from each other
