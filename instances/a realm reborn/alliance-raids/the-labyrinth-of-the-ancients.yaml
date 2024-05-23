@@ -1,0 +1,37 @@
+name: The Labyrinth of the Ancients
+encounters:
+  - name: Bone Dragon
+    steps:
+      - text: Tank boss on the northern edge of the arena
+        limits:
+          - role: tank
+      - text: Kill skeleton adds ASAP
+  - name: Atomos
+    steps:
+      - text: Split raid in 3, Alliance A, B and C take left, middle and right path respectively
+      - text: Don't pull the bosses until all players are in the arena, trailing players will all be teleported to left path leading the lack of balance
+      - text: 4 players should stand on platform, ideally healers and ranged dps; Other 4 players attack boss
+      - text: Tank should stand between platform and boss and pull adds to the 4 players on the platform
+        limits:
+          - role: tank
+      - text: Don't move off of platform until it stops glowing, even if your alliance's Atomos has been killed
+  - name: Thanatos
+    steps:
+      - text: DON'T pull boss until all players are close by. On pull, pots will tether everyone in Alliance A, if some of them are too far they won't get ${Buffs:Astral Realignment}Astral Realignment buff
+      - text: Only with ${Buffs:Astral Realignment}Astral Realignment can you damage the boss, other alliances should deal with adds and pots
+      - text: Heal damaged Magic Pots to full
+        limits:
+          - role: healer
+  - name: Allagan Bomb
+    steps:
+      - text: Split alliances into left(A), middle(B) and right(C) Vassagos
+      - text: Priority is Napalm adds -> Balloon adds -> Vassago
+  - name: King Behemoth
+    steps:
+      - text: Off-tank take Iron Giant adds away from players / meteors
+      - text: When marked by green marker, make sure you're outside the Boss' hitbox and drop meteor
+      - text: Hide behind meteor before boss finishes casting Ecliptic Meteor
+  - name: Phlegethon
+    steps:
+      - text: Split alliances into west(A), south(B) and east(C) panels on the edge of the arena
+      - text: When boss casts Ancient Flare, move to your Alliance's panel to raise shield

@@ -1,0 +1,29 @@
+name: Syrcus Tower
+encounters:
+  - name: Scylla
+    steps:
+      - text: When tethered by purple orb, just ignore
+      - text: Ignore adds
+      - text: When tethered by blue orb, let it hit you, you'll get frozen
+      - text: When tethered by red orb, make it hit frozen players
+      - text: Don't stand in puddles left by unfrozen players unless boss casts ancient flare
+  - name: Glasya Labolas
+    steps:
+      - text: Ignore adds
+  - name: Amon
+    steps:
+      - text: Tank boss facing away from raid
+        limits:
+          - role: tank
+      - text: ${Actions:Esuna}Esuna off any player affected by bomb debuff
+        limits:
+          - role: healer
+      - text: Kill all adds
+      - text: When tethered byu purple orbs, make them hit the Kum Kum adds to make them much easier to kill
+      - text: If turned into a frog, attack snakes but be sure to not damage frozen players
+      - text: When Amon casts Curtain Call, hide behind frozen players
+  - name: Xande
+    steps:
+      - text: When yellow-green circles with orbs appear, at least one player needs to stand in each to soak damage
+      - text: When boss disappears, quickly kill circle adds
+      - text: When stack markers appear, stack everyone in middle and stay there as next attack will kill you instantly if you're not floating
