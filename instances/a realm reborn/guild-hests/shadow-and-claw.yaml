@@ -1,0 +1,7 @@
+name: Shadow and Claw
+encounters:
+  - name: Shadow Claw
+    steps:
+      - text: Avoid standing near the floating eyeball add as it periodically fires point blank AoEs
+      - text: Watch small adds as they fire small point blank AoEs
+      - text: Focus on boss

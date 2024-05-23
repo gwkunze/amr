@@ -1,0 +1,8 @@
+name: All's Well that Ends in the Well
+encounters:
+  - name: Briaxio of the Well
+    steps:
+      - text: Kill adds as necessary, focus on boss otherwise
+      - text: ${Actions:Esuna}Esuna dispellable debuffs as much as possible
+        limits:
+          - role: healer

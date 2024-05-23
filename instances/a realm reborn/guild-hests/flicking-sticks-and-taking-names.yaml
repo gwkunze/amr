@@ -1,0 +1,5 @@
+name: Flicking Sticks and Taking Names
+encounters:
+  - name: Stikflix Grubmlytoss
+    steps:
+      - text: Just kill the mobs and avoid the AoEs

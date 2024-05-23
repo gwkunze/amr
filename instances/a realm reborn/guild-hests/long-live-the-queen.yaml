@@ -1,0 +1,5 @@
+name: Long Live the Queen
+encounters:
+  - name: Bomb Queen
+    steps:
+      - text: Kill bombs, stay out of AoEs

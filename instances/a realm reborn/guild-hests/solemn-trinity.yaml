@@ -1,0 +1,5 @@
+name: Solemn Trinity
+encounters:
+  - name: Crius Longbeard, Eurytos and Aegaeon of the Bone
+    steps:
+      - text: Kill all the mobs while protecting the crates in the center

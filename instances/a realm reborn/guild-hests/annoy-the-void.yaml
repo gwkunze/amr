@@ -1,0 +1,6 @@
+name: Annoy the Void
+encounters:
+  - name: Buso
+    steps:
+      - text: Interact with the blue flames to make boss vulnerable
+      - text: Kill adds and interact with the blue flames they leave behind
