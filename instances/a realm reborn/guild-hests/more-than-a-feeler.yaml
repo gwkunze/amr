@@ -1,0 +1,6 @@
+name: More than a Feeler
+encounters:
+  - name: Toxic Tamlyn
+    steps:
+      - text: Kill blue bubbles and avoid purple bubbles
+      - text: Avoid boss' frontal cone attack

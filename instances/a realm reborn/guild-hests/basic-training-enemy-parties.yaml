@@ -1,0 +1,5 @@
+name: "Basic Training: Enemy Parties"
+encounters:
+  - name: Elder Goobbye and friends
+    steps:
+      - text: Just kill everything

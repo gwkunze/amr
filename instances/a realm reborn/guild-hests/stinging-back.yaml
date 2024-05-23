@@ -1,0 +1,5 @@
+name: Stinging Back
+encounters:
+  - name: Redbelly Swampoint
+    steps:
+      - text: Focus down Redbelly Chanters first as they heal other mobs

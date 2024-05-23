@@ -1,0 +1,5 @@
+name: Under the Armor
+encounters:
+  - name: Bockman
+    steps:
+      - text: Ignore adds, just burn down Bockman

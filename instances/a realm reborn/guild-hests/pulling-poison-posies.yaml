@@ -1,0 +1,8 @@
+name: Pulling Poison Posies
+encounters:
+  - name: Toxic Battrap
+    steps:
+      - text: Tank boss, move whenever a new poison puddle appears
+        limits:
+          - role: tank
+      - text: Focus boss down

@@ -1,0 +1,11 @@
+name: Hero on the Halfshell
+encounters:
+  - name: Gil Turtle
+    steps:
+      - text: Kill adds
+      - text: Tank boss near Herb Patch
+        limits:
+          - role: tank
+      - text: Don't bother attacking the Gil Turtle, concentrate on adds
+      - text: When Fire Sprite add appears, kill it and grab its core
+      - text: When the core is acquired, interact with herb patch

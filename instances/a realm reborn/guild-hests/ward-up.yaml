@@ -1,0 +1,6 @@
+name: Ward Up
+encounters:
+  - name: Camio
+    steps:
+      - text: Kill all mobs around the same time, initially impossible as one is invulnerable
+# I believe there is a way to do this more quickly if you initially don't attack and wait a bit, after which the invulnerability disappears but don't remember the exact functionality

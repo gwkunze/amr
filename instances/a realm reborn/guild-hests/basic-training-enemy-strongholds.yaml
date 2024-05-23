@@ -1,0 +1,8 @@
+name: "Basic Training: Enemy Strongholds"
+encounters:
+  - name: Trash
+    steps:
+      - text: Kill trash, beware of adds spawning behind you
+  - name: Ledgeleaper
+    steps:
+      - text: Focus down boss, ignore adds
