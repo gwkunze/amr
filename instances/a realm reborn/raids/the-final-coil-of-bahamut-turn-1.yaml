@@ -1,0 +1,30 @@
+name: The Final Coil of Bahamut - Turn 1
+alternateNames:
+  - T10
+encounters:
+  - name: Imdugud
+    steps:
+      - text: Tank boss at edge of inner circle away from center
+        limits:
+          - role: tank
+      - text: Position behind boss on the flanks
+        limits:
+          - role: tank
+            invert: true
+      - text: When a player is debuffed with Prey, immediately cast a shield on them
+        limits:
+          - role: healer
+      - text: When a player is marked with a blue icon, move a distance behind boss to soak damage unless ${Debuffs:Vulnerability Up}Vulnerable
+        limits:
+          - role: tank
+            invert: true
+      - text: When off-tank is ${Debuffs:Vulnerability Up}Vulnerable, tank swap.
+        limits:
+          - role: tank
+      - text: When a player is marked with a blue icon, the off-tank should move between boss and marked player to intercept innitial charge
+        limits:
+          - role: tank
+      - text: When a player is thethered to the boss, stack up with 2 more players behind
+      - text: Tank add-groups away from each other
+        limits:
+          - role: tank
