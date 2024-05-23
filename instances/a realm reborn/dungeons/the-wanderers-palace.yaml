@@ -18,6 +18,8 @@ encounters:
     steps:
       - text: Move behind boss when it's casting ${Actions:Fire}Fire
       - text: ${Actions:Esuna}Esuna players afflicted by the ${Debuffs:Paralysis}Paralysis and ${Debuffs:Heavy}Heavy debuffs
+        limits:
+          - role: healer
       - text: Run away when targeted by Amorphic Flail
       - text: Prioritize Blue, Purple and White Bavarois adds
   - name: Tonberry King
