@@ -1,0 +1,22 @@
+name: The Binding Coil of Bahamut - Turn 1
+alternateNames:
+  - T1
+encounters:
+  - name: ADS
+    steps:
+      - text: Interrupt any cast of ${Actions:High Voltage}High Voltage
+        limits:
+          - roles:
+              - tank
+              - physical-ranged-dps
+  - name: Caduceus
+    steps:
+      - text: Don't stand on the yellow crystal
+      - text: Off-tank should be the only one standing in glowing platform to spawn slime
+      - text: Slime should be slowly kited to boss while bring its heatlh to around 10%
+      - text: Let boss eat the slime to remove Steel Scales buff on boss
+      - text: Ideally don't drop boss below 69% HP before removing all stacks
+      - text: Off tank should move boss' clone away from boss
+        limits:
+          - role: tank
+      - text: Try to kill the boss & clone around the same time

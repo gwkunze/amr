@@ -1,0 +1,47 @@
+name: The Binding Coil of Bahamut - Turn 4
+alternateNames:
+  - T4
+encounters:
+  - name: Clockwork Spiders
+    steps:
+      - text: Simply AoE down
+      - text: Use damage reduction to reduce spider self-heal
+  - name: Clockwork Knights & Soldiers
+    steps:
+      - text: Don't attack knights with magic
+        limits:
+          - roles:
+              - magical-ranged-dps
+              - healer
+      - text: Don't attack soldiers with physical until stoneskin is removed
+        limits:
+          - roles:
+              - melee-dps
+              - physical-ranged-dps
+              - tank
+  - name: Clockwork Dreadnaught
+    steps:
+      - text: Tank boss at the edge
+        limits:
+          - role: tank
+      - text: Stand right behind boss
+        limits:
+          - role: tank
+            invert: true
+  - name: Clockwork Bugs
+    steps:
+      - text: Split and Face Spinner-rooks to the south
+        limits:
+          - role: tank
+      - text: Stand to the north Kill Spinner-rooks first
+        limits:
+          - role: tank
+            invert: true
+  - name: Clockwork Dreadnaught, Soldier & Knight
+    steps:
+      - text: Kill Dreadnaught first
+  - name: Clockwork Onslaught
+    steps:
+      - text: Kill Spinner-rooks first
+      - text: Kill Knights, Soldiers and Bugs next
+      - text: Kill Dreadnaught last

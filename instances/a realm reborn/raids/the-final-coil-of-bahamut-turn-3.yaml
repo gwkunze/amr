@@ -1,0 +1,38 @@
+name: The Final Coil of Bahamut - Turn 3
+alternateNames:
+  - T12
+encounters:
+  - name: Phoenix - Phase 1 (100%-80%)
+    steps:
+      - text: Tank the boss in the center
+        limits:
+          - role: tank
+      - text: Tank swap after every Revelation
+        limits:
+          - role: tank
+      - text: Kill the Bennu adds at intercardinals away from each other
+      - text: Each of off-tank, dps and healers need to position together in separate places around the boss
+      - text: When targeted with Whitefire (white marker), drop AoE near Blackfire adds to debuff them
+  - name: Phoenix - Phase 2 (80%-52%)
+    steps:
+      - text: When targeted by purple or green marker, swap debuff to another player as soon as boss casts Flames of Unforgiveness
+        limits:
+          - roles:
+              - magical-ranged-dps
+              - physical-ranged-dps
+              - healer
+      - text: When targeted by blue marker, drop Bluefire puddle away from party and boss
+      - text: When tethered to red orb, move away and have a player stand in Bluefire puddle and then intercept orb
+  - name: Phoenix - Phase 3 (Add Phase)
+    steps:
+      - text: Kill 1 bennu, move pack away before it revives or it will buff the others
+      - text: Kill bigger revived bennu (this can be on top of the rest of the pack)
+      - text: Repeat until all bennus have been killed
+  - name: Phoenix - Phase 4
+    steps:
+      - text: When targeted with Brand of Purgatory (green or purple marker), pass debuff to main tank
+      - text: Swap debuff between off-tank and main tank when boss starts casting Flames of Unforgiveness
+        limits:
+          - role: tank
+      - text: Stand in Fountain of fire to take 4 (off-tank) or 2 (2 dps) stacks of debuff or it will buff boss
+      - text: When tethered, make sure the incoming charge only hits you

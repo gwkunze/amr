@@ -1,0 +1,42 @@
+name: The Final Coil of Bahamut - Turn 2
+alternateNames:
+  - T11
+encounters:
+  - name: Kaliya - Phase 1
+    steps:
+      - text: Tank boss with both tanks facing away from party in/near center
+        limits:
+          - role: tank
+      - text: Position behind boss, stand near center for easy AoE avoidance
+        limits:
+          - role: tank
+            invert: true
+      - text: Soak Resonance by stacking up both tanks
+        limits:
+          - role: tank
+      - text: Don't stand inside boss' hitbox
+      - text: Blue missile from head stack up
+      - text: Red missiles from head spread out
+      - text: When boss is casting Secondary Head, off-tank should provoke and soak Main Head attack
+        limits:
+          - role: tank
+      - text: When adds spawn move to next phase
+  - name: Kaliya - Phase 2 (adds)
+    steps:
+      - text: Each tank should take one of sphere or cube. Keep adds away from each other
+        limits:
+          - role: tank
+      - text: Split DPS between sphere and cube
+        limits:
+          - role: tank
+            invert: true
+      - text: Sphere group should stack up behind
+        limits:
+          - role: tank
+            invert: true
+      - text: Kill sphere and cube adds approximately at same time
+      - text: Egg can only be damaged from melee range
+  - name: Kaliya - Phase 3
+    steps:
+      - text: Stack up at start for mitigating / healing raid-wide AoE
+      - text: When tethered, stay close to each other but away from other tethered pairs

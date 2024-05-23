@@ -1,0 +1,15 @@
+name: The Second Coil of Bahamut - Turn 2
+alternateNames:
+  - T7
+encounters:
+  - name: Melusine
+    steps:
+      - text: Tank boss at north edge of arena
+        limits:
+          - role: tank
+      - text: Spread out in semi-cicle around boss to avoid AoEs
+      - text: When affected by Cursed Voice (triangle icon), look towards Renaud to petrify him, make sure no players and snakes are in your vision cone
+      - text: When affected by Cursed Shriek (circle icon), hide behind the petrified Renaud
+      - text: Don't attack petrified Renaud except when a new one appears
+      - text: Look away from when it or Lamia Prosecutors cast Petrifaction
+      - text: Kill other adds ASAP

@@ -1,0 +1,47 @@
+name: The Final Coil of Bahamut - Turn 4
+alternateNames:
+  - T13
+encounters:
+  - name: Bahamut Prime - Phase 1 (100%-76%)
+    steps:
+      - text: Tank boss on south edge of arena
+        limits:
+          - role: tank
+      - text: "Megaflare: Spread out"
+      - text: When marked with three rotating crystals, stack up with similarly marked players on predetermined spot
+      - text: "Flatten: Mitigate"
+        limits:
+          - role: tank
+      - text: When marked with fancy arrow, drop puddles in predetermined spots at edge of arena, beware of column attack between boss and puddle drop positions
+  - name: Bahamut Prime - Phase 2 (76%-52%)
+    steps:
+      - text: Tank Shadow of Meracydia north, away from boss
+        limits:
+          - role: tank
+      - text: Kill adds ASAP
+      - text: Share tethered orb debuff to make sure nobody gets debuffed more than twice
+      - text: When pillar with ground circle appears, at least 1 player needs to stand in it to prevent raid-wide damage
+        limits:
+          - mechanic: soakTower
+  - name: Bahamut Prime - Phase 3 (Add Phase)
+    steps:
+      - text: When boss disappears stack up in center of arena and wait for the Green marker to appear, dodge both charges which should go through middle of arena and spread out immediately after
+      - text: Pull Pain of Meracydia to the west
+        limits:
+          - role: tank
+      - text: Focus down Blood of Meracydia down first, check boss buff to ensure you burst when it's not mitigating your type of damage
+      - text: Keep Gust adds away from Pain of Meracydia add
+      - text: Stack two Sins of Meracydia adds in middle to AoE them down
+      - text: Storm of Meracydia add should be tanked south, also pick up any new Gust adds, other tank take remaining adds and move them close to Storm
+        limits:
+          - role: tank
+      - text: Once boss casts Teraflare, stand in Neurolink puddle
+      - text: Use LB3 when Teraflare has 4 seconds on countdown
+        limits:
+          - role: tank
+  - name: Bahamut Prime - Phase 4 (52%-0%)
+    steps:
+      - text: Off tank should grab tether and share-soak Akh Morn with main tank
+        limits:
+          - role: tank
+      - text: During Megaflare and Earth Shaker, tanks should grab tethers from tethered players and spread out

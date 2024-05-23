@@ -29,6 +29,10 @@ export const Mechanics: { [k: string]: Mechanic } = {
     knockback: {
         caption: 'Knockback',
         description: 'Multiple yellow double-chevrons pointing in the same direction or away from a point appear on the ground. Once the attack happens, all players get moved in that direction unless using an ability that prevents movement',
+    },
+    soakTower: {
+        caption: 'Soak Tower',
+        description: 'A ground circle appears where at least 1 player must stand in it to take the damage, or entire party/raid will take damage. Usually contains a tower in the middle, but variations without a tower in the middle exist',
     }
 };
 

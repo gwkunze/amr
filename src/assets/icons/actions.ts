@@ -6,6 +6,7 @@ import fireIcon from '../../../img/action/fire.png';
 import eruptionIcon from '../../../img/action/eruption.png';
 import theDragonsVoiceIcon from '../../../img/action/the-dragons-voice.png';
 import theRamsVoiceIcon from '../../../img/action/the-rams-voice.png';
+import highVoltageIcon from '../../../img/action/high-voltage.png';
 
 import { ImageSet } from './types';
 
@@ -18,5 +19,6 @@ export const Actions: ImageSet = new Map([
     ['Eruption', eruptionIcon],
     ["The Dragon's Voice", theDragonsVoiceIcon],
     ["The Ram's Voice", theRamsVoiceIcon],
+    ['High Voltage', highVoltageIcon],
 ]);
 

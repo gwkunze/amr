@@ -1,0 +1,21 @@
+name: The Second Coil of Bahamut - Turn 3
+alternateNames:
+  - T8
+encounters:
+  - name: The Avatar
+    steps:
+      - text: "Towers: ↑ Dreadnought | → Mines | ↓ AoE | ← AoE"
+      - text: Rotate players to stand in tower semicircle to add charge to make towers not fire off at same time
+      - text: ${Actions:Esuna}Esuna any player afflicted by ${Debuffs:Bleed}Bleeding
+        limits:
+          - role: healer
+      - text: Kill Dreadnought ASAP
+      - text: Off-tank and perhaps 1 dps should trigger landmines when they spawn
+        limits:
+          - role: healer
+            invert: true
+      - text: Have one player (off-tank or DPS) intercept the homing missile tether and move away from party
+      - text: Stack up when targeted by sky-laser
+      - text: On Brainjack, have one player stand close to the tank
+      - text: On Ballistic Missile stack raid up perfectly
+      - text: "Small orange circle: Soak with exactly 2 players, large: 3"

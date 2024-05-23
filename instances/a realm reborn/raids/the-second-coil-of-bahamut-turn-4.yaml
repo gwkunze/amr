@@ -1,0 +1,29 @@
+name: The Second Coil of Bahamut - Turn 4
+alternateNames:
+  - T9
+encounters:
+  - name: Nael Deus Darnus - Phase 1 & 2
+    steps:
+      - text: When yellow rock or red cross appears above head, drop meteor away from party and other dropped meteors
+      - text: When a player is marked with red column icon, stack up
+      - text: Stay away from main tank
+      - text: Drop green markers away from meteors and at the outer edge
+      - text: Tank green golem away from party
+        limits:
+          - role: tank
+      - text: Tank and interrupt blue golem
+        limits:
+          - role: tank
+      - text: Use golems to eat up to 3 meteors by moving them close to them
+      - text: Kill green golem first
+  - name: Nael Deus Darnus - Phase 3 & 4
+    steps:
+      - text: Stay near but not on center to avoid getting knocked back into the outer edge
+      - text: Tank Ghost of Meracydia add ASAP
+        limits:
+          - role: tank
+      - text: Kill Ghost of Meracydia ASAP
+      - text: Ghost of Meracydia leaves small white circles on death, stand in them to remove debuffs
+      - text: When debuffed with element, get hit by opposite
+      - text: When afflicted with Thunderstruck, move away from party
+      - text: When targeted with markers, move to edge of arena

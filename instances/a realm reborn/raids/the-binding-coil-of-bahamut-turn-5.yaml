@@ -1,0 +1,59 @@
+name: The Binding Coil of Bahamut - Turn 5
+alternateNames:
+  - T5
+encounters:
+  - name: Twintania - Phase 1
+    steps:
+      - text: Tank the adds seaparate from the boss
+        limits:
+          - role: tank
+      - text: Tank the boss at the beginning of the hilly area of the palm
+        limits:
+          - role: tank
+      - text: Kill adds ASAP
+      - text: Once adds are down, split group in half, 4 players on each side (pets count) and stand on flanks of boss, but stay slightly separated
+      - text: HP <85% -> phase 2
+  - name: Twintania - Phase 2
+    steps:
+      - text: Soak Fireball (red icon) with a group of exactly four (pets count)
+      - text: Make sure players are topped off
+        limits:
+          - role: healer
+      - text: Once targeted by Conflagration (blue icon), move into boss' hitbox
+      - text: Kill Conflagration ASAP
+      - text: When targeted by Fireball with Conflagration up, move into Conflagration
+      - text: Tank swap on Death Sentence
+        limits:
+          - role: tank
+      - text: At ~60% HP, boss should be moved forward slightly
+        limits:
+          - role: tank
+      - text: HP <55% -> phase 3
+  - name: Twintania - Phase 3
+    steps:
+      - text: Run into small gap at bottom of the hill at arena edge
+      - text: Once a player gets targeted by Divebomb (green icon), run towards top of hill until she's flown by, move back, repeat
+      - text: Kill 1 Hygieia next to Asclepius
+      - text: After second set of Divebombs, kill 2nd Hygieia next to boss and Off-tank binks up new adds and everyone move to center
+      - text: Kill all Hygieia and finally Asclepius
+      - text: After Asclepius falls, main tank moves to one Neurolink (circle on floor), while everyone else moves to the other
+      - text: Stand in Neurolink until boss finishes her ultimate and move to phase 4
+  - name: Twintania - Phase 4
+    steps:
+      - text: Focus (Shift-F) Twintania to keep track of Twisters casts
+      - text: Tank near the bottom of the hill (entrance)
+        limits:
+          - role: tank
+      - text: Spread out across the room away from center
+        limits:
+          - role: tank
+            invert: true
+      - text: When boss starts casting Twisters, move away if targeted ASAP
+      - text: When Dreadknight spawns, if targeted stay away, otherwise stun & kill it ASAP
+      - text: When boss drops 3rd neurolink, move to phase 5
+  - name: Twintania - Phase 5
+    steps:
+      - text: Off-tank should stand in newly dropped neurolink directly under boss
+        limits:
+          - role: tank
+      - text: When targeted by Liquid Hell, move to edge and keep running until all 5 puddles have dropped
