@@ -1,0 +1,50 @@
+name: The World of Darkness
+encounters:
+  - name: Angra Mainyu
+    steps:
+      - text: Tank boss in middle facing away from raid
+        limits:
+          - role: tank
+      - text: When ground becomes half red and half white, stand in either color. On subsequent casts you need to stand in whichever one you didn't stand in the previous time (alternate between colors)
+      - text: When circle appears and tethers all players in it to the central player, move out of it ASAP
+      - text: Kill all Hourglass adds, don't stand in glowing quarter of arena when last one dies
+      - text: Kill floating eye adds
+      - text: When boss casts Mortal Doom, fact your character looking away from boss or be afflicted by ${Debuffs:Doom}Doom
+      - text: If afflicted by ${Debuffs:Doom}Doom, stand on one of the glowing panels to get rid of it
+  - name: Five-headed Dragon
+    steps:
+      - text: Tank boss at the far edge of the arena, facing it away from the raid
+        limits:
+          - role: tank
+      - text: Beware of ice circle AoE as they leave puddles that grow over time
+      - text: On poison pool, have one player stand in it to prevent more adds
+      - text: Kill Prominence adds ASAP
+      - text: When marked with a purple icon, move into other players to share damage
+      - text: When marked with rotating yellow crown, move away from raid
+      - text: When tethered, move tether to another player, repeat to reduce damage
+      - text: When heads become targetable, AoE them down ASAP
+  - name: Atomos
+    steps:
+      - text: Split Alliance in left(A), middle(B) and right(C) each take one teleporter
+      - text: "Shockwave: Stand in Atomos' hitbox to prevent knockback from kicking you off the platform"
+      - text: When marked by red target marker, move away from party as you'll get sucked in large conal intake of breath
+      - text: When players are knocked off of the platform, stand on the glowing sigil to allow them to jump back up
+      - text: Kill Sacrified Soldier add
+  - name: Cerberos
+    steps:
+      - text: Alliance C's tank should tank boss away from party
+        limits:
+          - role: tank
+      - text: Stand to the flanks of the boss to avoid frontal and rear cleaves
+      - text: DO NOT ATTACK GASTRIC JUICE ADD!
+      - text: Alliance B should stand next to Gastric Juice to get minified
+      - text: Alliance B, once minified should stand in purple vomit to get eaten
+      - text: Alliance A should tank and kill Wolfsbane adds
+      - text: Once boss slumps in pain, two Alliance C playters need to grab the chains at the end of the arena and use them on the Open Fetters on the sides of the boss
+  - name: Cloud of Darkness
+    steps:
+      - text: Stand on the edges, not right in front of the boss
+      - text: If marked by red target, run away from party and lead the trailing AoEs away
+      - text: When glyphs appear on ground, have at least 1 player stand in each
+      - text: Kill cloud adds ASAP, stand in add hitbox to make them move slower
+      - text: When Hypercharged clouds appear, have each alliance take one, stand whitin the hexagon to be able to damage them
